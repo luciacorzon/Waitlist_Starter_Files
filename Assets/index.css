@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+
+/*parte do header */
+
+/* 1- header flex para que logo e nav poidan moverse*/
+header {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* 2- o nav necesita un width de polo menos a metade do header para que os elementos de dentro poidan separase un dos outros*/
+header > nav {
+    width: 50%;
+}
+
+/*ahora os elementos teñen espacio para separarse*/
+ul:first-of-type {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* parte main*/
