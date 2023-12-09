@@ -4,6 +4,8 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;   /*flexbox en body para poder minimizar a pantalla*/
     height: 100%;
     font-family: Nunito Sans;
     margin-left: 100px;
@@ -27,7 +29,9 @@ header {
 /* 2- o nav necesita un width de polo menos a metade do header para que os elementos de dentro poidan separase un dos outros*/
 /*outra opción: flex-end + márgenes*/
 header > nav {
-    width: 50%;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*ahora os elementos teñen espacio para separarse*/
@@ -47,9 +51,10 @@ li {
 /*MAIN*/
 
 main {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    height: 60%;
+    height: auto;    /*para que o contido non colapse sobre footer*/
+    min-width: 100%;
 }
 
 article {
