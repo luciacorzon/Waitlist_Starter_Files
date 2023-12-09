@@ -35,8 +35,7 @@ header > nav {
 }
 
 /*ahora os elementos teñen espacio para separarse*/
-ul:first-of-type {
-    list-style: none;
+ul:first-child {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -44,10 +43,16 @@ ul:first-of-type {
 }
 
 li {
-    text-decoration: none;
-    margin: 5px;
-    background-color:
+    /*text-decoration: none;*/
+    margin-right: 7px;
+    list-style-type: none;
+    list-style-position: inside;
 }
+
+ul:first-child > li:hover {
+    background-color: #372865;
+}
+
 
 
 /*MAIN*/
@@ -129,7 +134,9 @@ ul:nth-child(2) {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding: 0;
 }
+
 
 
 /*mover links de abaixo á esquerda
