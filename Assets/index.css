@@ -1,13 +1,17 @@
 html {
-    height: 100%;   /* header 20 - main 60 - footer 20 */
+    height: 100%;   /* header 20 - main 60 - footer 20 */   /* violeta: #372865  gris: #F6F9FE*/
+    background-color: #F6F9FE;
 }
 
 body {
     height: 100%;
+    font-family: Nunito Sans;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 
-/*parte do header */
+/*HEADER */
 
 /* 1- header flex para que logo e nav poidan moverse*/
 header {
@@ -15,7 +19,9 @@ header {
     position: relative;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 20%;
+    color: white;
 }
 
 /* 2- o nav necesita un width de polo menos a metade do header para que os elementos de dentro poidan separase un dos outros*/
@@ -29,21 +35,67 @@ ul:first-of-type {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    padding: 0;
 }
 
-/*parte main*/
+li {
+    margin: 5px;
+}
+
+
+/*MAIN*/
+
 main {
     display: flex;
     flex-direction: row;
     height: 60%;
 }
 
+article {
+    color: #372865;
+    /*padding: 20px;*/
+} 
+
+p {
+    line-height: 2;
+    padding-right: 100px;
+}
+
+article > p:nth-child(1) {       /*especificamos para este p concreto*/
+    background-color: #372865;
+    color: #F6F9FE;
+    border-radius: 10px;
+    padding: 6px;
+    width: fit-content;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+span {
+    text-decoration: underline;
+}
+
+img {
+    margin-left: 30px;
+}
+
+form > label {
+    order: 2;
+
+}
 
 
-/*parte footer*/
+/*FOOTER*/
+
 footer {
     height: 20%;
+    color:  #372865;
+    font-weight: bold;
 }
 
 ul:nth-child(2) {
@@ -52,3 +104,9 @@ ul:nth-child(2) {
     justify-content: flex-start;
     padding:0;    /*todas as listas teñen por defecto un padding á esquerda*/
 }
+
+
+/*mover links de abaixo á esquerda
+  cambiar links de arriba
+  axustar texto de main
+  arreglar o form */
