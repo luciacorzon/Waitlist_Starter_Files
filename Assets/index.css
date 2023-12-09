@@ -29,4 +29,9 @@ ul:first-of-type {
     flex-direction: row;
     justify-content: space-between;
 }
-/* parte main*/
+
+/*parte main*/
+main {
+    display: flex;
+    flex-direction: row;
+}
