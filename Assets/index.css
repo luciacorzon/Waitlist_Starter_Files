@@ -44,7 +44,9 @@ ul:first-of-type {
 }
 
 li {
+    text-decoration: none;
     margin: 5px;
+    background-color:
 }
 
 
@@ -55,6 +57,7 @@ main {
     flex-direction: row;
     height: auto;    /*para que o contido non colapse sobre footer*/
     min-width: 100%;
+    align-items: center;
 }
 
 article {
@@ -88,10 +91,29 @@ span {
 img {
     margin-left: 30px;
 }
+    /*forms*/
+form {
+    display: inline-flex;
+    position: relative;
+    flex-direction: row-reverse;
+    height: 50px;
+}
+
+form > input {
+    width: 350px;
+    border: none;
+    border-style:groove;
+    color:gainsboro;
+}
 
 form > label {
-    order: 2;
-
+    width: 100px;
+    background-color: #372865;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 5px;
 }
 
 
@@ -107,7 +129,6 @@ ul:nth-child(2) {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding:0;    /*todas as listas teñen un padding á esquerda por defecto*/
 }
 
 
