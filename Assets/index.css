@@ -49,9 +49,33 @@ li {
     list-style-position: inside;
 }
 
-ul:first-child > li:hover {
-    background-color: #372865;
+    /*links*/
+
+a{
+    text-decoration: none;
+    color:#372865;
+    margin: 5px;
 }
+
+#linkwaitlist {
+    background-color :#372865;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#linkwaitlist:hover {
+    background-color: #7b6ba9;
+}
+
+ul:first-child > li > a:hover {
+    background-color: #7b6ba9;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+
 
 
 
